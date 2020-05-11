@@ -109,7 +109,7 @@ module.exports = {
  output: {
     filename: `${PATHS.assets}/js/[name].js`,
     path: PATHS.dist,
-    publicPath: '/webpack_pr1/dist/'
+    publicPath: '/'
     //library: 'myfunc'
   },
   optimization: {
