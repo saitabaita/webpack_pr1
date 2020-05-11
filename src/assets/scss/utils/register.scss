@@ -1,0 +1,94 @@
+.wp_register{
+    width: 400px;
+    margin:auto;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    justify-content: space-around; 
+    align-items: center;
+    position: relative;
+    //background-color: aqua;
+    .signin{
+        display: flex;
+        flex-direction: column;
+        background-color:#fff;
+        width: 330px;
+        height: 358;
+        padding: 20px;
+        margin: 10px auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        .signin2_radio{
+            display: flex;
+            //margin-bottom: 10px;
+            label{
+                font-size: 14px;
+                //margin-top: 3px;
+            }
+        }
+        .signin__label{
+            margin-bottom: 10px;
+            //display: flex;
+            label{
+                font-size: 21px;
+                font-weight: 600;
+            }
+            span{
+                margin-left: 80px;
+                margin-top: -20px;
+                border:none;
+                display:inline-block;
+                padding:0px 0px;
+                vertical-align:middle;
+                overflow:hidden;
+                text-decoration:none;
+                color:inherit;
+                background-color:inherit;
+                text-align:center;
+                cursor:pointer;
+                white-space:nowrap;
+                text-align: right;
+                position: relative;
+            }
+        }
+        input[type=text]{
+            width: 300px;
+            height: 44px;
+            padding: 10px;
+            margin: 5px 0px;
+            border-radius: 4px;
+            border: 1px solid rgba(31, 32, 65, 0.25);;
+        }
+        input[type=button]{
+            width: 320px;
+            height: 44px;
+            background: linear-gradient(to top, #BC9CFF, #8BA4F9);
+            border-radius: 22px;
+            font-size: 17px;
+            color:white;
+        }
+        .signin__div{
+            display: flex;
+            width: 320px;
+            height: 44px;
+            margin-top: 10px;
+            label{
+                font-size: 17px;
+                padding-top: 10px;
+                font-weight: 100;
+            }
+            .btn {
+                    color:white;
+                    height: 20px;
+                    text-decoration:none;
+                    padding:10px 20px;
+                    margin-left: 25px;
+                    border-radius:20px;
+                    font-size:17px;
+            }
+            .btn-color {
+                @include button-bg(rgb(169, 167, 196));
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.paramview{
+    text-align: center;
+    display: none;
+    .param{
+        display: flex;
+        justify-content: space-around;
+        width: 600px;
+        .param__d{
+            width: auto;
+        }
+    }
+}
+.nomeraview{
+    display: flex;
+
+}

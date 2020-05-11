@@ -1,0 +1,22 @@
+
+.airdp{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+    label{
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    .airdp__input{
+        height: 20px;
+    }
+    .air-div{
+        min-width: 190px;
+    }
+    .air-div::after{
+        content: "V";
+        font-size: small;
+        position: relative;
+        left: -20px;
+    }
+}

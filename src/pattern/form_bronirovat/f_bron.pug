@@ -1,0 +1,43 @@
+include ../../pattern/button320/button320.pug
+
+.booknow
+    .booknow__head
+        +info-nomera('888', '9 990')
+    br
+    form(id="form_bron" method="GET" action="index.html").booknow__form
+        .booknow__dates
+            +datepicker('dateb', 'Прибытие')
+            +div_empty('5px')
+            +datepicker('datee', 'Выезд')
+        br
+        .booknow__guest
+            label(for="_select").label_little| гости
+            include ../../pattern/dp-guest/dp-guest.pug
+    .booknow__raschety
+        .item1
+            | 9 990P * 4 суток
+        .item2
+        .item3
+            | 39 960P
+        .item1
+            | Сбор за услуги: скидка 2 179P
+        .item2
+            img(src="/assets/img/info.png")
+        .item3
+            | 0P
+        .item1
+            | Сбор за дополнительные услуги
+        .item2
+            img(src="/assets/img/info.png")
+        .item3
+            | 300P
+
+    .booknow__itogo
+        .booknow__itogo-label
+            label| <b>Итого</b>
+        .booknow__itogo-label_cena
+            label| <b>38 810P</b>
+             
+    a(href="javascript: document.getElementById('form_bron').submit();")
+        +button320('Забронировать')
+

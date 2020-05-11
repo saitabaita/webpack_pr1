@@ -1,0 +1,14 @@
+extends ../layout/main
+include ../utils/mixin.pug
+
+block variables
+    - var title = 'Hotel Altay'
+    - var pageClass = 'index-page'
+    - var activePage = 2
+    - var namePage = 'Бронирование'
+
+
+block content
+    section
+        .content(style="margin:20px")
+            include ../../pattern/form_bronirovat/f_bron.pug

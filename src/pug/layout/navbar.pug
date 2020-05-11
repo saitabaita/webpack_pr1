@@ -1,0 +1,10 @@
+.navbar
+    .navbar__box1
+        label| Бронирование номеров
+    form(id="form_find" method="get" action='room_price.html').navbar__form
+        +datepicker('dpzaezd', 'Заезд')
+        +datepicker('dpмнezd', 'Выезд')
+        .guest
+            +guest("gosti")
+    .navbar__box3
+        button(type="submit" form="form_find")| Подобрать номер

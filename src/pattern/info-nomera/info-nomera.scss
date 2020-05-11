@@ -1,0 +1,26 @@
+.info-nomera{
+    display: flex;
+    //justify-content: left; 
+    width: 100%;
+    min-width: 240px;
+    .info-nomera__one{
+        font-size: 14px;  
+        font-weight: bold; 
+        padding-top: 6px;
+    }
+    .info-nomera__number{
+        font-size: 21px;
+        font-weight: bold;
+        color: black;
+    }
+    .info-nomera__kategoriya{
+        font-size: 14px;  
+        padding-top: 6px;
+        color: blueviolet;
+    }
+    .info-nomera__price{
+        font-size: 14px;  
+        margin-left: auto;
+        padding-top: 6px;
+    }
+}

@@ -1,0 +1,58 @@
+extends ../layout/main
+include ../utils/mixin.pug
+
+block variables
+    - var title = 'Room&Price'
+    - var pageClass = 'index-page'
+    - var activePage = 3
+    - var namePage = 'Room&Price'
+
+block content
+    section
+        include ../layout/navbar.pug
+
+    section
+        .content
+            .content-box
+                .paramview
+                    h3| Выполнен запрос с параметрами:
+                    .param
+                        .param__d
+                            label(id='par1')| Дата заезда:&nbsp;
+                        .param__d
+                            label(id='par2')| Дата выезда:&nbsp;
+                        .param__d
+                            label(id='par3')| Гостей:&nbsp;
+                .nomeraview
+                    .item(style="width: 260px;border:1px solid #ccc")
+                        +nomer('/assets/img/nomer1.png', '888', '9 990', '__stars1',165)
+
+                    .item(style="width: 260px;border:1px solid #ccc")
+                        +nomer('/assets/img/nomer2.png', '444', '19 990', '__stars2',125)
+    script
+        | $(document).ready(function(){
+        |   var i=1;
+        |   var params = new URLSearchParams(location.search);
+        |   console.log(params.toString().length);
+        |   if (params.toString().length){
+        |       $('.paramview').css('display', 'block');    
+        |     for(var value of params.values()) {
+        |       var _val = $('#par'+i).text();
+        |        $('#par'+i).text(_val+value);
+        |        i++;
+        |     }
+        |   }
+        |   $('#__stars1').barrating({
+        |     theme: 'css-stars',
+        |     readonly: 'true'
+        |   });
+        |   $('#__stars1').barrating('set', 3);
+        |  $('#__stars2').barrating({
+        |    theme: 'css-stars',
+        |     readonly: 'true'
+        |   });
+        |   $('#__stars2').barrating('set', 4);
+        | });
+
+            
+    

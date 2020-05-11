@@ -1,0 +1,27 @@
+.button320_gradient{
+    width: 320px;
+    height: 44px;
+    font-size:17px;
+    background: linear-gradient(rgb(188, 156, 255), rgb(139, 164, 249));
+    color: #fff;
+    border-radius: 22px;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    label{
+        min-width: 270px;
+        cursor: pointer;
+    }
+    img{
+        margin-top:11px;
+        height: 20px;
+    }
+}
+.button320_gradient:hover{
+    background: linear-gradient(rgb(139, 164, 249), rgb(188, 156, 255));
+}
+.button320_gradient:active{
+    background: rgb(152,15,0);
+}

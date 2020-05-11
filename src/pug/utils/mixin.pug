@@ -1,0 +1,88 @@
+
+mixin header_img()
+    .head__img
+        a(href="index.html")
+            img(src="../assets/img/Logo.png", alt="Домашняя страница")
+
+mixin show_item_menu($item, $active)
+        if $active
+            li.active
+                a(href=$item.href)= $item.name
+        else
+            li
+                if $item.drop_down
+                    a(class='drop_down_services')= $item.name
+                    ul.head__menu__drop_down
+                        each serv in $item.drop_down
+                            li 
+                                a(href='')= serv.name
+                else
+                    a(href=$item.href)= $item.name
+
+mixin navbar()
+    h3.navbar__head__h3= 'Бронирование номеров'
+
+mixin guest(_id)
+    .guest_data
+        label(for=_id).navbar__guest_col1__label| Гости 
+        input(type="text" name=_id id="" value="1")
+    .guest_img
+        img(src='assets/img/icons8-user-male-60.png')
+
+mixin datepicker(_id, _title)
+    .datepicker-container
+        input(type="text" name=_id placeholder="Выбрать дату").datepicker-container__input
+        label(for=_id)= _title
+
+mixin head_info(_title, _index)
+    - var menu = {menu_items: [{'name':'About_Hotel','href':'about.html'},{'name':'Book_now','href':'reservation.html'},{'name':'Room_Prices','href':'room_price.html'},{'name':'Services','href':'', drop_down: [{'name':'Prokat'},{'name':'Podgotovka'},{'name':'Obuchenie'}]},{'name':'Contacts','href':'contacts.html'}]}
+    .head__info_menu
+        - var items = menu.menu_items
+        - var i = 0;
+            ul
+                each item in items
+                    -i=i+1;
+                    if i == _index
+                        +show_item_menu(item, 1)
+                    else
+                        +show_item_menu(item, 0)
+
+mixin div_empty(_width)
+    .div__empty(style=`width: ${_width};clear: both`)
+
+mixin button_v(_title, _fontsize, _click, _id)
+    .button-v(style=`font-size: ${_fontsize};` onClick=`${_click}`)
+        .button-v__title(id=`${_id}`)= _title
+        
+mixin button_v2(_title, _fontsize, _click, _id)
+    .button-v2(style=`font-size: ${_fontsize};` onClick=`${_click}`)
+        .button-v2__title(id=`${_id}`)= _title
+
+mixin button320(_label)
+    .button320_gradient
+        label= _label
+        img(src='/assets/img/arrow_forward.png')
+
+mixin info-nomera(_num, _price)
+    .info-nomera
+        .info-nomera__one| №&nbsp;
+        .info-nomera__number| !{_num}&nbsp;
+        .info-nomera__kategoriya| люкс
+        .info-nomera__price| <b>!{_price}₽</b> в сутки
+
+mixin stars(_id, _otzyvy)
+    select(id=_id)
+        option| 0
+        option| 1
+        option| 2
+        option| 3
+        option| 4
+    label| !{_otzyvy} Отзывов
+    
+mixin nomer(_img, _num, _price, _id, _otzyvy)
+    .nomer
+        img(src = _img).nomer__img
+        .nomer__info
+            +info-nomera(_num, _price)
+            .stars
+                +stars(_id, _otzyvy)

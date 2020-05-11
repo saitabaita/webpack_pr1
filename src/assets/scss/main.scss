@@ -1,0 +1,26 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/header";
+@import "utils/navbar";
+@import "utils/footer";
+@import "utils/content";
+@import "utils/signin";
+@import "utils/register";
+@import "utils/reservation";
+@import "utils/contacts";
+@import "utils/about";
+@import "utils/room_price";
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont;
+    font-size: $mainFontSize;
+    font-weight: $mainFontWeight;
+}
+
+  

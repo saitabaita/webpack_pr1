@@ -1,0 +1,52 @@
+.dp-guest {
+    width: 340px;
+    height: 50px;
+    .dp-guest__selectBox {
+        position: relative;
+        .overSelect {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        select {
+            width: 100%;
+            font-weight: bold;
+        }
+    }
+    .dp-guest__checkboxes {
+        display: none;
+        background-color: whitesmoke;
+        position: relative;
+        z-index: 999;
+        border: 1px #dadada solid;
+        .dp-guest__checkboxes__box{
+            display: flex;
+            height: 28px;
+            line-height: 28px;
+            label{
+                font-size: 0.8em;
+                vertical-align: middle;
+                padding: 0 5px;
+            }
+            .dp-guest__checkboxes__box_control{
+                margin-left: auto;
+                .input_minus{
+                    visibility: hidden;
+                }
+                label{
+                    font-size: 0.7em;
+                    min-width: 10px;
+                    display: inline-block;
+                }
+            }
+        }
+        .dp-guest__checkboxes__box:hover{
+            background-color: #66B3D4;
+        }
+    }
+}
+
+  
+ 

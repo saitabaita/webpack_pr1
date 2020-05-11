@@ -1,0 +1,39 @@
+.dp-guest
+    .dp-guest__selectBox
+        select
+            option| Сколько гостей
+        .overSelect
+    .dp-guest__checkboxes
+        .dp-guest__checkboxes__box
+            label| Взрослые
+            .dp-guest__checkboxes__box_control
+                input(type="button" value="-" onClick="btnminus(this)").input_minus
+                label| 0                
+                input(type="button" value="+" onClick="btnplus(this)")
+        .dp-guest__checkboxes__box
+            label| Дети
+            .dp-guest__checkboxes__box_control
+                input(type="button", value="-" onClick="btnminus(this)").input_minus
+                label| 0                
+                input(type="button", value="+" onClick="btnplus(this)")
+        .dp-guest__checkboxes__box
+            label| Младенцы
+            .dp-guest__checkboxes__box_control
+                input(type="button", value="-" onClick="btnminus(this)").input_minus
+                label| 0                
+                input(type="button", value="+" onClick="btnplus(this)")
+script
+    |  function btnplus(th){
+    |   if(th){
+    |        var t=parseInt($(th).prev().text());
+    |        $(th).prev().text(t+1);
+    |        $(th).prev().prev().css('visibility','visible');
+    |   }
+    |  };
+    |  function btnminus(th){
+    |    if(th){
+    |        var t=parseInt($(th).next().text());
+    |        (t>0) ? $(th).next().text(t-1): 0;
+    |        if(t==1) $(th).css('visibility','hidden');
+    |   }
+    |  };

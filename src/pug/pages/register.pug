@@ -1,0 +1,46 @@
+extends ../layout/main
+include ../utils/mixin.pug
+
+block variables
+    - var title = 'Регистрация аккаунта'
+    - var pageClass = 'index-page'
+    - var activePage = 0
+    - var namePage = 'Регистрация аккаунта'
+
+block content
+    section
+        .content
+            .wp_register
+                .signin
+                    .signin__label
+                        label| Регистрация аккаунта
+                        span(onClick="javascript:history.back();")| x
+                    input(type="text" placeholder="Имя").signin_name
+                    input(type="text" placeholder="Фамилия")
+                    .signin2_radio#register_radio
+                        input(type='radio', name='register_radio_', value='1')
+                        label| Мужчина
+                        input(type='radio', name='register_radio_', value='2')
+                        label| Женщина
+                    br
+                    label| Дата рождения
+                    input(type="text" placeholder="ДД.ММ.ГГГГ")
+                    br
+                    label| Данные для входа в сервис
+                    input(type="text" placeholder="Email")
+                    input(type="text" placeholder="Пароль")
+                    br
+                    a(onClick="reg_now()")
+                        +button320('Зарегистрироваться')
+
+                    .signin__div
+                        label| Уже есть аккаунт в Toxin?
+                        a(href="" class="btn btn-color")| Войти
+    script
+        |   function reg_now(){
+        |       let name = $('.signin_name').val();    
+        |       //console.log(name);
+        |       Cookies.set('wp_user',name); 
+        |       main_sign_in();
+        |       history.back();
+        |   }

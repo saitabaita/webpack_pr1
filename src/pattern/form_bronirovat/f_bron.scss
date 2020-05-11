@@ -1,0 +1,65 @@
+.booknow{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin:auto;
+    height: auto;
+    padding: 20px 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    grid-column-start: 1;
+    grid-column-end: 13;
+    align-items: center;
+    .booknow__form{
+        .booknow__dates{
+            display: flex;
+            width: 340px;
+        }
+        .booknow__guest{
+            height: 80px;
+        }
+    }
+    .booknow__raschety{
+        display: grid;
+        font-size: 0.8em;
+        grid-template-columns: 230px 30px 80px;
+        grid-template-rows: repeat(3, 30px);
+        width: 340px;
+        .item2 {
+            margin: auto;
+        }
+        .item3 {
+            margin-left: auto;
+        }
+    }
+    .booknow__itogo{
+        display: flex;
+        height: 60px;
+        width: 340px;
+        align-items: center;
+        .booknow__itogo-label_cena{
+            margin-left: auto;
+        }
+    }
+    .booknow__head{
+        width: 340px;
+    }
+    a{
+        text-decoration: none;
+        .button_gradient{
+            width: 320px;
+            height: 44px;
+            font-size:17px;
+            background: linear-gradient(rgb(188, 156, 255), rgb(139, 164, 249));
+            color: #fff;
+            border-radius: 22px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .button_gradient::after{
+            content: url(../../assets/img/arrow_forward.png);
+            position: relative;
+            top: calc(.6em/2);
+            left: 4.5em;
+        }
+    }
+}

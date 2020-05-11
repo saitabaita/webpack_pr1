@@ -1,0 +1,27 @@
+.nomer{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    border:1px solid #ccc;
+    .nomer__img{
+        width: 100%;
+    }
+    .nomer__info{
+        margin: 10px;
+        .info-nomera{
+            padding-top: 10px;
+        }
+        .stars{
+            padding-top: 10px;
+        }
+    }
+}
+.stars{
+    display: flex;
+    min-width: 220px;
+    label{
+        font-size: 0.8em;
+        align-self: flex-end;
+        margin-left: auto;
+    }
+}
