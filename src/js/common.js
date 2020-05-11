@@ -1,6 +1,6 @@
 require('jquery-ui');
 
-  const $menudropdown = $('.drop_down_services, .head__menu__drop_down');
+const $menudropdown = $('.drop_down_services, .head__menu__drop_down');
   
     $menudropdown.mouseover(function(){
         $('.head__menu__drop_down').attr("style","display: flex");

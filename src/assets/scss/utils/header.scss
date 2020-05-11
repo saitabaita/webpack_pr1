@@ -82,7 +82,7 @@
                 text-align: center;
                 position: relative;
                 justify-content: space-around;  
-                align-items: center;
+                //align-items: center;
                 li{
                     padding-left: 5px;
                     padding-right: 0px;
@@ -92,7 +92,7 @@
                         text-decoration: none;
                         text-align: center;
                     }
-                    ul{
+                    .head__menu__drop_down{
                         //visibility: hidden;
                         display: none;
                         margin-top: -2px;
