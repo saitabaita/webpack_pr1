@@ -7,13 +7,14 @@
     //margin-top: 25px;
     min-width: 164px;
     background-color: white;
-    input[type=text]{
+    .datepicker-container__input{
         width: 85px;
         margin-left: 10px;
         border: 0px;
         background-color: #EDF1FF;
         height: 20px;
         margin-top: 20px;
+
     }
     label{
         font-size: small;
