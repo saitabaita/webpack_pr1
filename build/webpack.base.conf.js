@@ -109,9 +109,6 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}/js/[name].js`,
     path: PATHS.dist,
-    //publicPath: '/'
-    //publicPath: '/webpack_pr1/dist/'
-    //library: 'myfunc'
   },
   optimization: {
     splitChunks: {

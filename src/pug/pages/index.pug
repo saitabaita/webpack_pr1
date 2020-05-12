@@ -3,14 +3,10 @@ include ../utils/mixin.pug
 
 block variables
     - var title = 'Hotel Altay'
-    //- var menu = {menu_items: [{'name':'About Hotel','href':'about.html'},{'name':'Book now','href':'reservation.html'},{'name':'Rooms&Prices','href':''},{'name':'Services','href':'', drop_down: [{'name':'Prokat'},{'name':'Podgotovka'},{'name':'Obuchenie'}]},{'name':'Contacts','href':''}]}
     - var activePage = 0
     - var namePage = 'Home page'
 
 block content
-    //section(style="background-color: #4e677d")
-        img(src='/assets/img/panorana_tulpany.png' style='width:100%')
-
     section
         include ../layout/navbar.pug
 

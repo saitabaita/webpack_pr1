@@ -93,17 +93,15 @@
                         text-align: center;
                     }
                     .head__menu__drop_down{
-                        //visibility: hidden;
                         display: none;
                         margin-top: -2px;
                         align-items: center;
-                        //display: flex;
                         flex-direction: column;
                         z-index: 99;
                         background-color: whitesmoke;
                         border: 1px solid #ccc;
                         position: relative;
-                        width: 120px;
+                        width: 135px;
                         height: 115px;
                         li a:hover{
                             border-bottom: none;

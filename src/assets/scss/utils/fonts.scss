@@ -1,10 +1,11 @@
 
+
 @font-face {
     font-display: block;
     font-family: 'Montserrat';
     src: url('/webpack_pr1/dist/assets/fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
          url('/webpack_pr1/dist/assets/fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
-         url('/webpack_pr1/dist/assets/fonts/montserrat-v14-latin-regular.woff') format('woff'),
-         url('/webpack_pr1/dist/assets/fonts/montserrat-v14-latin-regular.ttf') format('truetype');
+         url('/assets/fonts/montserrat-v14-latin-regular.woff') format('woff'),
+         url('/assets/fonts/montserrat-v14-latin-regular.ttf') format('truetype');
 }
