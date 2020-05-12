@@ -16,6 +16,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     },
     port: 8081,
   },
+  output: {
+    publicPath: '/'
+  },
   plugins: [
     new webpack.SourceMapDevToolPlugin({
       filename: "[file].map"
