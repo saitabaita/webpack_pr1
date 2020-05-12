@@ -16,7 +16,7 @@ block content
                         label| Регистрация аккаунта
                         span(onClick="javascript:history.back();")| x
                     input(type="text" placeholder="Имя").signin_name
-                    input(type="text" placeholder="Фамилия")
+                    input(type="text" placeholder="Фамилия").signin_name
                     .signin2_radio#register_radio
                         input(type='radio', name='register_radio_', value='1')
                         label| Мужчина
@@ -24,11 +24,11 @@ block content
                         label| Женщина
                     br
                     label| Дата рождения
-                    input(type="text" placeholder="ДД.ММ.ГГГГ")
+                    input(type="text" placeholder="ДД.ММ.ГГГГ").signin_name
                     br
                     label| Данные для входа в сервис
-                    input(type="text" placeholder="Email")
-                    input(type="text" placeholder="Пароль")
+                    input(type="text" placeholder="Email").signin_name
+                    input(type="text" placeholder="Пароль").signin_name
                     br
                     a(onClick="reg_now()")
                         +button320('Зарегистрироваться')
