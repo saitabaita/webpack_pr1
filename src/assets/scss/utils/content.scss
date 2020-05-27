@@ -1,8 +1,11 @@
 .content{
+    flex: 1 0 auto;
     width: 100%;
     min-height: 400px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    //justify-content: center;
+    align-content:center;
 }
 .content-box{
     grid-column-start: 5;

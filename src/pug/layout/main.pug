@@ -18,7 +18,6 @@ html(lang='ru-RU')
         script(src="assets/js/paginator.js")
         script(src="assets/js/jquery.barrating.js")
     body
-
         block signin
                 .wp_modal(id="block_signin")
                     .signin
@@ -33,59 +32,58 @@ html(lang='ru-RU')
                         .signin__div
                             label| Нет аккаунта в Toxin?
                             a(href="register.html" class="btn btn-color")| Создать
-
-        block header
-            .head
-                .head_box1
-                    +header_img()
-                .head_box2
-                    .head__info
-                        .head__title
-                            img(src='assets/img/telefon.png')
-                            label|  +7 388-22-88-888
-                            +div_empty('40px')
-                            img(src='assets/img/icons8-почта-24.png')
-                            label| &nbsp;altay-travel@mail.ru
-                            +div_empty('40px')
-                        .head__menu
-                            +head_info(namePage, activePage)    
-                .head_box3
-                    label.head_account
-                    .head__sign_button
-                        +button_v2('Sign-in', '80%','main_sign_click()', 'sign_button')
-
-        block content
-
-        block foot
-            .footer
-                .footer_box1
-                    label.num1| ALT@Y
-                    br
-                    br
-                    label.num2| 649000 Gorno-Altaisk 
-                    br
-                    label.num2| Choros-Gurkina, 10
-                    br
-                    br
-                    label.num2| T +7 388-22-88-888
-                    br
-                    label.num2| F +7 388-22-88-889
-                    br
-                    br
-                    label.num2| altay-travel@mail.ru
-                .footer_box2
-                    img(src="assets/img/Alpinist.jpg" width="470px" height="220px")
-                .footer_box3
-                    .footer__box3__href
-                        a(href="about.html")| About Hotel
-                    .footer__box3__href
-                        a(href="reservation.html")| Book Now
-                    .footer__box3__href
-                        a(href="room_price.html")| Room & Prices
-                    .footer__box3__href
-                        a(href="")| Services
-                    .footer__box3__href
-                        a(href="contacts.html")| Contacts
+        .wrapper
+            block header
+                .head
+                    .head_box1
+                        +header_img()
+                    .head_box2
+                        .head__info
+                            .head__title
+                                img(src='assets/img/telefon.png')
+                                label|  +7 388-22-88-888
+                                +div_empty('40px')
+                                img(src='assets/img/icons8-почта-24.png')
+                                label| &nbsp;altay-travel@mail.ru
+                                +div_empty('40px')
+                            .head__menu
+                                +head_info(namePage, activePage)    
+                    .head_box3
+                        label.head_account
+                        .head__sign_button
+                            +button_v2('Sign-in', '80%','main_sign_click()', 'sign_button')
+            block content
+                .content
+            block foot
+                .footer
+                    .footer_box1
+                        label.num1| ALT@Y
+                        br
+                        br
+                        label.num2| 649000 Gorno-Altaisk 
+                        br
+                        label.num2| Choros-Gurkina, 10
+                        br
+                        br
+                        label.num2| T +7 388-22-88-888
+                        br
+                        label.num2| F +7 388-22-88-889
+                        br
+                        br
+                        label.num2| altay-travel@mail.ru
+                    .footer_box2
+                        img(src="assets/img/Alpinist.jpg" width="470px" height="220px")
+                    .footer_box3
+                        .footer__box3__href
+                            a(href="about.html")| About Hotel
+                        .footer__box3__href
+                            a(href="reservation.html")| Book Now
+                        .footer__box3__href
+                            a(href="room_price.html")| Room & Prices
+                        .footer__box3__href
+                            a(href="")| Services
+                        .footer__box3__href
+                            a(href="contacts.html")| Contacts
         script
             | function main_sign_click(){
             |   let username = Cookies.get('wp_user');

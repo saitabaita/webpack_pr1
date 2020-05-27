@@ -8,24 +8,22 @@ block variables
     - var namePage = 'Contact us'
 
 block content
-    section
-        include ../layout/navbar.pug
-    section
-        .content
-            .contacts
-                .recvisity
-                    .box1
-                        br
-                        h3 Hotel Altay Private Residences, Resp.Altay
-                        label| <b>Adress:</b> 649777 Respublica Altay, selo Tuyngur, Choros-Gurkina, 10
-                        br
-                        br
-                        label| <b>Email:</b> altay-travel@mail.ru
-                        br
-                        br
-                        label| <b>Phone:</b> +7 388-22-88-888
-                        br
-                        br
-                        +button_v2('Свяжитесь с нами', '150%')
-                    .box2
-                        img(src="assets/img/karta.png")
+    include ../layout/navbar.pug
+    .content
+        .contacts
+            .recvisity
+                .box1
+                    br
+                    h3 Hotel Altay Private Residences, Resp.Altay
+                    label| <b>Adress:</b> 649777 Respublica Altay, selo Tuyngur, Choros-Gurkina, 10
+                    br
+                    br
+                    label| <b>Email:</b> altay-travel@mail.ru
+                    br
+                    br
+                    label| <b>Phone:</b> +7 388-22-88-888
+                    br
+                    br
+                    +button_v2('Свяжитесь с нами', '150%')
+                .box2
+                    img(src="assets/img/karta.png")

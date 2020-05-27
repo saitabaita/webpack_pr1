@@ -8,27 +8,25 @@ block variables
     - var namePage = 'Room&Price'
 
 block content
-    section
-        include ../layout/navbar.pug
+    include ../layout/navbar.pug
 
-    section
-        .content
-            .content-box
-                .paramview
-                    h3| Выполнен запрос с параметрами:
-                    .param
-                        .param__d
-                            label(id='par1')| Дата заезда:&nbsp;
-                        .param__d
-                            label(id='par2')| Дата выезда:&nbsp;
-                        .param__d
-                            label(id='par3')| Гостей:&nbsp;
-                .nomeraview
-                    .item(style="width: 260px;border:1px solid #ccc")
-                        +nomer('assets/img/nomer1.png', '888', '9 990', '__stars1',165)
+    .content
+        .content-box
+            .paramview
+                h3| Выполнен запрос с параметрами:
+                .param
+                    .param__d
+                        label(id='par1')| Дата заезда:&nbsp;
+                    .param__d
+                        label(id='par2')| Дата выезда:&nbsp;
+                    .param__d
+                        label(id='par3')| Гостей:&nbsp;
+            .nomeraview
+                .item(style="width: 260px;border:1px solid #ccc")
+                    +nomer('assets/img/nomer1.png', '888', '9 990', '__stars1',165)
 
-                    .item(style="width: 260px;border:1px solid #ccc")
-                        +nomer('assets/img/nomer2.png', '444', '19 990', '__stars2',125)
+                .item(style="width: 260px;border:1px solid #ccc")
+                    +nomer('assets/img/nomer2.png', '444', '19 990', '__stars2',125)
     script
         | $(document).ready(function(){
         |   var i=1;
