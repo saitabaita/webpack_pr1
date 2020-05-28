@@ -7,46 +7,44 @@ block variables
     - var namePage = 'Home page'
 
 block content
-    section
-        include ../layout/navbar.pug
+    include ../layout/navbar.pug
 
-    section
-        .content
-            .content-box
-                .item(style='width:450px')
-                    ul(id="lightSlider")
-                        li
-                            img(src='assets/img/nomera/nomer1.jpg')
-                        li
-                            img(src='assets/img/nomera/nomer2.jpg')
-                        
-                .item
-                    +nomer('assets/img/nomer1.png', '888', '9 990', 'stars',165)
-
-                .item
-                    +nomer('assets/img/nomer2.png', '444', '19 990', 'stars3',125)
+    .content
+        .content-box
+            .item(style='width:450px')
+                ul(id="lightSlider")
+                    li
+                        img(src='assets/img/nomera/nomer1.jpg')
+                    li
+                        img(src='assets/img/nomera/nomer2.jpg')
                     
-                .item(style="width: 300px;height:60px;border:1px solid #ccc")
-                    label.label_little| рейтинг
-                    .stars
-                        +stars('stars2',145)
-                .item
-                    include ../../pattern/air-datepicker/airdatepicker.pug
-                .item    
-                    include ../../pattern/range-slider/rangeslider.pug
-                .item    
-                    include ../../pattern/expandablechecklist/expandablechecklist.pug
-                .item    
-                    include ../../pattern/dp-guest/dp-guest.pug
-                .item
-                    +button320('Перейти к оплате')
-                .item    
-                    include ../../pattern/pagination/pagination.pug
-                .item    
-                    include ../../pattern/feedback/feedback.pug
-                .item    
-                    +button_v('Sign-in', '80%')
-                .item    
-                    +button_v2('Sign-in', '90%')
-                .item(style="width:340px; border:1px solid #ccc")
-                    +info-nomera('888', '9 990')
+            .item
+                +nomer('assets/img/nomer1.png', '888', '9 990', 'stars',165)
+
+            .item
+                +nomer('assets/img/nomer2.png', '444', '19 990', 'stars3',125)
+                
+            .item(style="width: 300px;height:60px;border:1px solid #ccc")
+                label.label_little| рейтинг
+                .stars
+                    +stars('stars2',145)
+            .item
+                include ../../pattern/air-datepicker/airdatepicker.pug
+            .item    
+                include ../../pattern/range-slider/rangeslider.pug
+            .item    
+                include ../../pattern/expandablechecklist/expandablechecklist.pug
+            .item    
+                include ../../pattern/dp-guest/dp-guest.pug
+            .item
+                +button320('Перейти к оплате')
+            .item    
+                include ../../pattern/pagination/pagination.pug
+            .item    
+                include ../../pattern/feedback/feedback.pug
+            .item    
+                +button_v('Sign-in', '80%')
+            .item    
+                +button_v2('Sign-in', '90%')
+            .item(style="width:340px; border:1px solid #ccc")
+                +info-nomera('888', '9 990')

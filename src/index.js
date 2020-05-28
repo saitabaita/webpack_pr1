@@ -31,13 +31,9 @@ import './pattern/button_v2/button_v2.scss'
 import './pattern/info-nomera/info-nomera.scss'
 import './pattern/nomera/nomera.scss';
 
-//import './js/test'
 
 window.Cookies = require("js-cookie")
-//import ddd from './js/test';
 
 Window.jQuery = $;
 Window.$ = $;
-//alert(Cookies.get('wp_user'));
-//Cookies.set('wp_user','Alexander');
 

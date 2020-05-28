@@ -22,14 +22,14 @@ block content
                         label| Мужчина
                         input(type='radio', name='register_radio_', value='2')
                         label| Женщина
-                    br
+                    +div_empty_height('10px')
                     label| Дата рождения
                     input(type="text" placeholder="ДД.ММ.ГГГГ").signin_name
-                    br
+                    +div_empty_height('10px')
                     label| Данные для входа в сервис
                     input(type="text" placeholder="Email").signin_name
                     input(type="text" placeholder="Пароль").signin_name
-                    br
+                    +div_empty_height('10px')
                     a(onClick="reg_now()")
                         +button320('Зарегистрироваться')
 

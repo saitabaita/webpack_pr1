@@ -48,7 +48,10 @@ mixin head_info(_title, _index)
                         +show_item_menu(item, 0)
 
 mixin div_empty(_width)
-    .div__empty(style=`width: ${_width};clear: both`)
+    .div__empty(style=`width: ${_width}`)
+
+mixin div_empty_height(_height)
+    .div__empty(style=`height: ${_height}`)
 
 mixin button_v(_title, _fontsize, _click, _id)
     .button-v(style=`font-size: ${_fontsize};` onClick=`${_click}`)
