@@ -144,7 +144,6 @@ module.exports = {
       { from: 'node_modules/lightslider/dist/css/lightslider.min.css', to: `${PATHS.assets}/css/lightslider.min.css` },
       { from: 'src/libs/flexible-paginator/paginator.js', to: `${PATHS.assets}/js/paginator.js` },
       { from: `${PATHS.src}/libs/flexible-paginator/paginator-style.css`, to: `${PATHS.assets}/css/paginator-style.css` },
-      { from: `${PATHS.src}/static` },
     ]),
     new webpack.ProvidePlugin({
       "$":"jquery",
