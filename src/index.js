@@ -28,6 +28,8 @@ import './pattern/pagination/pagination'
 import './pattern/feedback/feedback.scss'
 import './pattern/button_v/button_v.scss'
 import './pattern/button_v2/button_v2.scss'
+import './pattern/button_v3/button_v3.scss'
+import './pattern/button_v4/button_v4.scss'
 import './pattern/info-nomera/info-nomera.scss'
 import './pattern/nomera/nomera.scss';
 

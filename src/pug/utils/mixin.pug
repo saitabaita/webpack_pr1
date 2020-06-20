@@ -1,9 +1,4 @@
 
-mixin header_img()
-    .head__img
-        a(href="/webpack_pr1/dist/index.html")
-            img(src="assets/img/Logo.png", alt="Домашняя страница")
-
 mixin show_item_menu($item, $active)
         if $active
             li.active
@@ -35,7 +30,7 @@ mixin datepicker(_id, _title)
         label(for=_id)= _title
 
 mixin head_info(_title, _index)
-    - var menu = {menu_items: [{'name':'About_Hotel','href':'about.html'},{'name':'Book_now','href':'reservation.html'},{'name':'Room_Prices','href':'room_price.html'},{'name':'Services','href':'', drop_down: [{'name':'Prokat'},{'name':'Podgotovka'},{'name':'Obuchenie'}]},{'name':'Contacts','href':'contacts.html'}]}
+    - var menu = {menu_items: [{'name':'Home','href':'about.html'},{'name':'About Us','href':'reservation.html'},{'name':'Services','href':'', drop_down: [{'name':'Prokat'},{'name':'Training'},{'name':'News'}]},{'name':'Careers','href':'room_price.html'},{'name':'News','href':'contacts.html'},{'name':'Documentation','href':'contacts.html'}]}
     .head__info_menu
         - var items = menu.menu_items
         - var i = 0;
@@ -60,6 +55,14 @@ mixin button_v(_title, _fontsize, _click, _id)
 mixin button_v2(_title, _fontsize, _click, _id)
     .button-v2(style=`font-size: ${_fontsize};` onClick=`${_click}`)
         .button-v2__title(id=`${_id}`)= _title
+
+mixin button_v3(_label, _height, _width)
+    .buttonv3_gradient(style=`height:${_height};width:${_width}`)
+        label= _label
+
+mixin button_v4(_label, _height, _width)
+    .buttonv4(style=`height:${_height};width:${_width}`)
+        label= _label
 
 mixin button320(_label)
     .button320_gradient

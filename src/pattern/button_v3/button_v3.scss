@@ -1,0 +1,21 @@
+.buttonv3_gradient{
+    width: 100px;
+    height: 44px;
+    background: linear-gradient(rgb(188, 156, 255), rgb(139, 164, 249));
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    label{
+        color: #fff;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+}
+.buttonv3_gradient:hover{
+    background: linear-gradient(rgb(139, 164, 249), rgb(188, 156, 255));
+}
+.buttonv3_gradient:active{
+    background: rgb(152,15,0);
+}

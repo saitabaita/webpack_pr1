@@ -35,23 +35,22 @@ html(lang='ru-RU')
         .wrapper
             block header
                 .head
-                    .head_box1
-                        +header_img()
+                    a(href="index.html").head_box1
+                        .img
+                            img(src='assets/img/Vector.png', alt="Домашняя страница")
+                        +div_empty('10px')
+                        .img
+                            img(src='assets/img/TOXIN.png', alt="Домашняя страница")
+                        
                     .head_box2
-                        .head__info
-                            .head__title
-                                img(src='assets/img/telefon.png')
-                                label|  +7 388-22-88-888
-                                +div_empty('40px')
-                                img(src='assets/img/icons8-почта-24.png')
-                                label| &nbsp;altay-travel@mail.ru
-                                +div_empty('40px')
-                            .head__menu
-                                +head_info(namePage, activePage)    
+                        .head__menu
+                            +head_info(namePage, activePage)    
                     .head_box3
                         label.head_account
-                        .head__sign_button
-                            +button_v2('Sign-in', '80%','main_sign_click()', 'sign_button')
+                        +button_v4('LOGIN', '34px', '79px')
+                        +div_empty('10px')
+                        +button_v3('REGISTER', '34px', '101px')
+                            //+button_v2('Sign-in', '80%','main_sign_click()', 'sign_button')
             block content
                 .content
             block foot
