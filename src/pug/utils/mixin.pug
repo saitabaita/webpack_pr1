@@ -60,8 +60,8 @@ mixin button_v3(_label, _height, _width)
     .buttonv3_gradient(style=`height:${_height};width:${_width}`)
         label= _label
 
-mixin button_v4(_label, _height, _width)
-    .buttonv4(style=`height:${_height};width:${_width}`)
+mixin button_v4(_label, _height, _width, _click)
+    .buttonv4(style=`height:${_height};width:${_width}` onClick=`${_click}`)
         label= _label
 
 mixin button320(_label)

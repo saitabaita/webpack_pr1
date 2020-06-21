@@ -29,7 +29,9 @@ $(document).ready(function() {
   $("#lightSlider").lightSlider({
     item:1,
     loop:true,
-    slideMargin:0
+    slideMargin:0,
+    controls:true,
   }); 
+  $('.lSPager').attr("style","display: none");
 });
 

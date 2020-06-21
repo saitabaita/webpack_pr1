@@ -45,12 +45,10 @@ html(lang='ru-RU')
                     .head_box2
                         .head__menu
                             +head_info(namePage, activePage)    
-                    .head_box3
                         label.head_account
-                        +button_v4('LOGIN', '34px', '79px')
+                        +button_v4('LOGIN', '34px', '79px', 'main_sign_click()')
                         +div_empty('10px')
-                        +button_v3('REGISTER', '34px', '101px')
-                            //+button_v2('Sign-in', '80%','main_sign_click()', 'sign_button')
+                        +button_v3('REGISTER', '34px', '110px')
             block content
                 .content
             block foot
@@ -82,24 +80,31 @@ html(lang='ru-RU')
                             a(href="contacts.html")| Contacts
         script
             | function main_sign_click(){
-            |   let username = Cookies.get('wp_user');
-            |   if(username === undefined){    
+            |   //let username = Cookies.get('wp_user');
+            |   //if(username === undefined){    
             |       document.getElementById('block_signin').style.display='inline';
-            |   }else{
-            |       Cookies.remove('wp_user');
-            |       $('.signin__label_email').val('');
-            |       $('.head_account').text('');
-            |       $('#sign_button').text('sign in');
-            |   }    
+            |   //}else{
+            |   //    Cookies.remove('wp_user');
+            |   //    $('.signin__label_email').val('');
+            |   //    $('.head_account').text('');
+            |       //$('#sign_button').text('sign in');
+            |  // }  
+            |       $('.head_account').text("Юлий Цезарь");
+            |       // Скрываем кнопки
+            |       $('.buttonv4').attr("style","display: none");
+            |       $('.buttonv3_gradient').attr("style","display: none");
             | }
             | function main_sign_in(){
             |   let username = Cookies.get('wp_user');
             |   if(username){
-            |       $('.signin__label_email').val(username);
-            |       $('.head_account').text(username);
-            |       $('#sign_button').text('sign out');
+            |       //$('.signin__label_email').val(username);
+            |       $('.head_account').text("Юлий Цезарь");
+            |       //$('#sign_button').text('sign out');
+            |       // Скрываем кнопки
+            |       $('.buttonv4').attr("style","display: none");
+            |       $('.buttonv3_gradient').attr("style","display: none");
             |   }
             | }
             | $(document).ready(function(){
-            |   main_sign_in(); 
+            |   //main_sign_in(); 
             | });
