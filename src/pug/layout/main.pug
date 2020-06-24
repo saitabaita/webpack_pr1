@@ -54,30 +54,64 @@ html(lang='ru-RU')
             block foot
                 .footer
                     .footer_box1
-                        label.num1| ALT@Y
-                        +div_empty_height('20px')
-                        label.num2| 649000 Gorno-Altaisk 
-                        +div_empty_height('5px')
-                        label.num2| Choros-Gurkina, 10
-                        +div_empty_height('20px')
-                        label.num2| T +7 388-22-88-888
-                        +div_empty_height('5px')
-                        label.num2| F +7 388-22-88-889
-                        +div_empty_height('20px')
-                        label.num2| altay-travel@mail.ru
-                    .footer_box2
-                        img(src="assets/img/Alpinist.jpg" width="470px" height="220px")
-                    .footer_box3
-                        .footer__box3__href
-                            a(href="about.html")| About Hotel
-                        .footer__box3__href
-                            a(href="reservation.html")| Book Now
-                        .footer__box3__href
-                            a(href="room_price.html")| Room & Prices
-                        .footer__box3__href
-                            a(href="")| Services
-                        .footer__box3__href
-                            a(href="contacts.html")| Contacts
+                        .logo
+                            .img
+                                img(src='assets/img/Vector.png', alt="Домашняя страница")
+                            +div_empty('10px')
+                            .img
+                                img(src='assets/img/TOXIN.png', alt="Домашняя страница")
+                        +div_empty_height('10px')
+                        label| Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+                    .comm_div    
+                        .footer_box2
+                            label.title| Навигация
+                            +div_empty_height('10px')
+                            label.other| О нас
+                            +div_empty_height('10px')
+                            label.other| Новости
+                            +div_empty_height('10px')
+                            label.other| Служба поддержки
+                            +div_empty_height('10px')
+                            label.other| Услуги
+                        .footer_box2
+                            label.title| О нас
+                            +div_empty_height('10px')
+                            label.other| О сервисе
+                            +div_empty_height('10px')
+                            label.other| Наша команда
+                            +div_empty_height('10px')
+                            label.other| Вакансии
+                            +div_empty_height('10px')
+                            label.other| Инвесторы
+                        .footer_box2
+                            label.title| Служба поддержки
+                            +div_empty_height('10px')
+                            label.other| Соглашения
+                            +div_empty_height('10px')
+                            label.other| Сообщества
+                            +div_empty_height('10px')
+                            label.other| Связь с нами
+                        .footer_box2
+                            label.title| Подписка
+                            +div_empty_height('10px')
+                            label.other| Получайте специальные предложения и новости сервиса
+                            +div_empty_height('10px')
+                            .email
+                                input(type="text" placeholder="Email").signin_name
+                                img(src='assets/img/arrow_forward2.png')
+                .footer2
+                    .footer2__box1
+                        label| Copyright © 2018 Toxin отель. Все права зачищены.
+                    .footer2__box2
+                        .img
+                            img(src='assets/img/golub.png', alt="Домашняя страница")
+                        +div_empty('10px')
+                        .img
+                            img(src='assets/img/faceb.png', alt="Домашняя страница")
+                        +div_empty('10px')
+                        .img
+                            img(src='assets/img/fignya.png', alt="Домашняя страница")
+
         script
             | function main_sign_click(){
             |   //let username = Cookies.get('wp_user');
